@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Modern premium restaurant menu website with shopping cart and responsive design." />
+  <meta name="keywords" content="restaurant, menu, food, premium, responsive, cart" />
+  <meta name="author" content="ChatGPT" />
+  <title>Velvet Bite | Premium Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="loader">
+  <div class="spinner"></div>
+  <h2>Velvet Bite</h2>
+</div>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">Velvet Bite</div>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="themeToggle">🌙</button>
+      <button id="favoritesBtn">❤ <span id="favoritesCount">0</span></button>
+      <button id="cartBtn">🛒 <span id="cartCount">0</span></button>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Luxury Dining Experience</h1>
+    <p>Fresh ingredients, premium flavors, unforgettable moments.</p>
+    <a href="#menu" class="hero-btn">Explore Menu</a>
+  </div>
+</section>
+
+<section class="controls" id="menu">
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search delicious dishes..." />
+  </div>
+
+  <div class="filters">
+    <button class="filter-btn active" data-category="All">All</button>
+    <button class="filter-btn" data-category="Starters">Starters</button>
+    <button class="filter-btn" data-category="Main Dishes">Main Dishes</button>
+    <button class="filter-btn" data-category="Burgers">Burgers</button>
+    <button class="filter-btn" data-category="Pizzas">Pizzas</button>
+    <button class="filter-btn" data-category="Drinks">Drinks</button>
+    <button class="filter-btn" data-category="Desserts">Desserts</button>
+  </div>
+</section>
+
+<section class="menu-grid" id="menuContainer"></section>
+
+<aside class="cart-panel">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button id="closeCart">✕</button>
+  </div>
+
+  <div id="cartItems"></div>
+
+  <div class="cart-footer">
+    <h3>Total: $<span id="cartTotal">0.00</span></h3>
+    <button class="checkout-btn">Checkout</button>
+  </div>
+</aside>
+
+<section class="about-section" id="about">
+  <div class="glass-card">
+    <h2>About Velvet Bite</h2>
+    <p>
+      Velvet Bite combines gourmet cuisine with modern aesthetics, bringing you a premium online dining experience.
+    </p>
+  </div>
+</section>
+
+<footer id="contact">
+  <h3>Velvet Bite Restaurant</h3>
+  <p>Premium fictional restaurant experience.</p>
+</footer>
+
+<a href="https://wa.me/5511999999999" class="whatsapp-btn" target="_blank">💬</a>
+
+<div class="toast-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
